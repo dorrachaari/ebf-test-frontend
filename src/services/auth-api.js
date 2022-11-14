@@ -8,7 +8,6 @@ export default {
         return axios.post('/api/auth/signin', authenticationRequest)
         .then(response => {
             if (response && response.data) {
-                Vue.prototype.$snotify.success('hello')
                 return response.data;
 
             }
